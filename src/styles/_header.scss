@@ -1,0 +1,42 @@
+@use 'variaveis';
+
+.header {
+    
+    background-color: variaveis.$corPrimaria;
+    position: sticky;
+    top: 0;
+    left: 0;
+    transition: background-color .5s ease;
+    z-index: 1;
+
+        &__container{
+            padding: 8px 36px;
+            display: flex;
+            justify-content: space-between;
+            
+            @media (max-width: 375px){
+                justify-content: center;
+                display: none;
+            }
+    }
+
+
+    &__logo {
+        max-width: 120px;
+        width: 100%;
+        margin: 5px;
+        border-radius: 50%;
+        transition: opacity .5s ease;
+    }
+
+    &__links {
+
+        list-style: none;
+        display: flex;
+        text-decoration: none;
+        &__item {
+
+        }
+    }
+}
+
